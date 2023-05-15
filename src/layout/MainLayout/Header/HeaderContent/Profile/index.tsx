@@ -16,7 +16,7 @@ import useAuth from 'hooks/useAuth';
 
 // assets
 import avatar1 from 'assets/images/users/avatar-6.png';
-import { Setting2, Profile, Logout } from 'iconsax-react';
+import { Profile, Logout } from 'iconsax-react';
 
 // types
 interface TabPanelProps {
@@ -181,18 +181,7 @@ const ProfilePage = () => {
                         label="Profile"
                         {...a11yProps(0)}
                       />
-                      <Tab
-                        sx={{
-                          display: 'flex',
-                          flexDirection: 'row',
-                          justifyContent: 'center',
-                          alignItems: 'center',
-                          textTransform: 'capitalize'
-                        }}
-                        icon={<Setting2 size={18} style={{ marginBottom: 0, marginRight: '10px' }} />}
-                        label="Setting"
-                        {...a11yProps(1)}
-                      />
+                     
                     </Tabs>
                   </Box>
                   <TabPanel value={value} index={0} dir={theme.direction}>

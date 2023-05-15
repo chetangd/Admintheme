@@ -50,6 +50,13 @@ const applications: NavItemType = {
       url: '/apps/kanban/board'
     },
     {
+      id: 'staff',
+      title: <FormattedMessage id="staff" />,
+      type: 'item',
+      icon: icons.customer,
+      url: '/apps/staff/staff-list'
+    },
+    {
       id: 'customer',
       title: <FormattedMessage id="customer" />,
       type: 'collapse',

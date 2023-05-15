@@ -112,6 +112,8 @@ const MaintenanceComingSoon = Loadable(lazy(() => import('pages/maintenance/comi
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/sample-page')));
 const PricingPage = Loadable(lazy(() => import('pages/extra-pages/pricing')));
 
+const Staff = Loadable(lazy(() => import('pages/staff')));
+
 // ==============================|| MAIN ROUTES ||============================== //
 
 const MainRoutes = {
@@ -135,23 +137,6 @@ const MainRoutes = {
             {
               path: 'analytics',
               element: <DashboardAnalytics />
-            }
-          ]
-        },
-        {
-          path: 'widget',
-          children: [
-            {
-              path: 'statistics',
-              element: <WidgetStatistics />
-            },
-            {
-              path: 'data',
-              element: <WidgetData />
-            },
-            {
-              path: 'chart',
-              element: <WidgetChart />
             }
           ]
         },
@@ -186,6 +171,19 @@ const MainRoutes = {
                 {
                   path: 'customer-list',
                   element: <AppCustomerList />
+                },
+                {
+                  path: 'customer-card',
+                  element: <AppCustomerCard />
+                }
+              ]
+            },
+            {
+              path: 'staff',
+              children: [
+                {
+                  path: 'staff-list',
+                  element: <Staff />
                 },
                 {
                   path: 'customer-card',
@@ -299,6 +297,36 @@ const MainRoutes = {
                   element: <AppECommCheckout />
                 }
               ]
+            }
+          ]
+        },
+        {
+          path: 'widget',
+          children: [
+            {
+              path: 'statistics',
+              element: <WidgetStatistics />
+            },
+            {
+              path: 'data',
+              element: <WidgetData />
+            },
+            {
+              path: 'chart',
+              element: <WidgetChart />
+            }
+          ]
+        },
+        {
+          path: 'staff',
+          children: [
+            {
+              path: 'list',
+              element: <Staff />
+            },
+            {
+              path: 'add',
+              element: <WidgetData />
             }
           ]
         },

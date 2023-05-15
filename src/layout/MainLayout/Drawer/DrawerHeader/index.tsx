@@ -38,7 +38,7 @@ const DrawerHeader = ({ open }: Props) => {
         paddingLeft: isHorizontal ? { xs: '24px', lg: '0' } : open ? '24px' : 0
       }}
     >
-      <Typography variant="h3">Spin Style</Typography>
+      <Typography variant="h3">Test</Typography>
     </DrawerHeaderStyled>
   );
 };

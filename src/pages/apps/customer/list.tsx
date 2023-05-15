@@ -331,6 +331,7 @@ const CustomerListPage = () => {
 
   const renderRowSubComponent = useCallback(({ row }: { row: Row<{}> }) => <CustomerView data={data[Number(row.id)]} />, [data]);
 
+  console.log(data);
   return (
     <MainCard content={false}>
       <ScrollX>
